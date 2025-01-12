@@ -18,3 +18,7 @@ $routes->get('/', 'Home::index');
 if (file_exists(APPPATH . 'Config/' . ENVIRONMENT . '/Routes.php')) {
     require APPPATH . 'Config/' . ENVIRONMENT . '/Routes.php';
 }
+
+$routes->get('/barang/laporanStok', 'Barang::laporanStok');
+$routes->get('/barang/unduhLaporanStokPDF', 'Barang::unduhLaporanStokPDF');
+
