@@ -5,6 +5,7 @@ namespace App\Controllers;
 use App\Models\BarangModel;
 use App\Models\KategoriModel;
 use TCPDF;
+
 class Barang extends BaseController
 {
   public function index()
